@@ -1,5 +1,5 @@
 '''
-This is the __init__.py file for the EndtoEndPipeline application package
+This is the __init__.py file for the EndtoEndPipeline testing package
 '''
 
 import sys

@@ -22,6 +22,6 @@ def main():
         print('Script ended!')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     # Run the scripts
     main()
