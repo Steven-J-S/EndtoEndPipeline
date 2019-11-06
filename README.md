@@ -16,6 +16,7 @@ The lifecycle exists of several steps.
     - Use a .git branch to add new features
     - Refactor and modularize the code for clarity
     - Performance testing to find time/memory bottlenecks in the code
+    - Adding documentation for clarity
 4. Unit testing: make a pipeline for testing the application.
 5. Distribution: build a distribution for a new version of the application.
 6. CI/CD: Continue updating the code and adding new features while updating the distribution.
