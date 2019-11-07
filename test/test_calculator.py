@@ -4,14 +4,16 @@ This module contains the testing code for the cumulative profit calculators
 
 import unittest
 import numpy as np
+import sys
 # Import packages/modules to be tested
+sys.path.append('./.')
 import application
 from application.compound_interest_calculator import compound_profit
 
 class TestCalculator(unittest.TestCase):
-    '''This class contains the methods for testing the calculators'''
+    '''This class contains methods for testing the calculators in /application'''
 
-    def test_compound_interest_calculator(self):
+    def test_input(self):
         '''Method to test compound_interest_calculator'''
         input = np.random.random((2,1))
         compound_profit(input[0], input[1])
