@@ -1,5 +1,7 @@
 '''
 This module contains the testing code for the cumulative profit calculators
+
+TODO: make into custom testing class (with suites)
 '''
 
 import unittest
