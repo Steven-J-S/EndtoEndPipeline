@@ -20,6 +20,7 @@ def profiler(test_path, profile_directory = current_path + '\\', profile_file = 
 def store_stats(time_profile_raw, profile_directory = current_path + '\\', profile_file = 'time_profile'):
     '''This model processes raw cProfile file and stores output'''
     with open(profile_directory + profile_file, 'w') as stream:
+        profile_file = subprocess.call(['python', '-m', 'cProfile', '-s', 'tottime', test_path])
         stats = pstats.Stats(profile_directory + time_profile_raw, stream=stream)
         stats.print_stats()
 
@@ -33,9 +34,6 @@ if __name__ == '__main__':
     # Run profiler
     profiler(test_path)
 
-
-    '''
     # Run profile interpreter
     raw_profile_file = 'time_profile_raw'
     store_stats(raw_profile_file)
-    '''
